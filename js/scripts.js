@@ -5,18 +5,25 @@ function cap(input) {
     return capitalizedInput;
 }
 
-// function cap(input) {
-//     const capitalizedInput = input.charAt(0).toUpperCase() + input.slice(1, -1) + input.charAt(input.length - 1).toUpperCase();
-//     return capitalizedInput;
-// }
+function reverse(capitalizedInput) {
+    const slicedCapInput = capitalizedInput.slice(1, -1);
+    const reversedInput = capitalizedInput.charAt(capitalizedInput.length -1).toUpperCase() + slicedCapInput + capitalizedInput.charAt(0).toUpperCase();
+    return reversedInput;
+  }
 
-
+//function reverse(capitalizedInput) {
+  //const slicedCapInput = capitalizedInput.slice(1, -1);
+  //const reversedInput = (capitalizedInput.charAt(0).replace(capitalizedInput.length -1)) + //slicedCapInput + (capitalizedInput.charAt(-1).replace(capitalizedInput.length 1));
+  //return reversedInput;
+//}
 
 
 // UI Logic
 const input = prompt("Type your message: ");
+const capitalizedInput = prompt("type your message: ");
 
 window.alert(cap(input));
+window.alert(reverse(capitalizedInput));
 
 
 // Create another function that will reverse the order of these two letters and return the result.
