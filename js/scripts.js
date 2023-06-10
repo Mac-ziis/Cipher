@@ -1,29 +1,15 @@
 //Business logic
-
-// function cap(input) {
-//     let firstLetter = input.charAt(0);
-//     return firstLetter
-// }
-
-
-// main(String[] input)
-//     {
-//         String str = "GeeksforGeeks";
-//         int len = str.length();
- 
-//         // First Element
-//         System.out.println("First Element: "
-//                            + str.charAt(0));
- 
-//         // Last Element
-//         System.out.println("First Element: "
-//                            + str.charAt(len - 1));
-//     }
-// }
 function cap(input) {
-    const capitalizedInput = input.charAt(0).toUpperCase() + input.slice(1, -1) + input.charAt(input.length - 1).toUpperCase();
+    const slicedInput = input.slice(1, -1);
+    const capitalizedInput = input.charAt(0).toUpperCase() + slicedInput + input.charAt(input.length - 1).toUpperCase();
     return capitalizedInput;
 }
+
+// function cap(input) {
+//     const capitalizedInput = input.charAt(0).toUpperCase() + input.slice(1, -1) + input.charAt(input.length - 1).toUpperCase();
+//     return capitalizedInput;
+// }
+
 
 
 
